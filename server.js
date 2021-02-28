@@ -12,9 +12,11 @@ app.use(express.static("public"));
 
 //the default route of /and what to do!
 app.get("/", function(req,res){
-    res.send("hello");
-})
+    res.send("here is another test")
+});
 
 
-app.listen(79);
+app.listen(80,function(){
+    console.log('example log listen on port 80');
+});
 
